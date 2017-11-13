@@ -2,27 +2,30 @@
 public class Sheep extends Animal implements Cloneable {
 	private String name;
 
+
 	public Sheep() {
 		name = "";
 	}
+
 
 	public String getName() {
 		return name;
 	}
 
+
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public Sheep(String name) {
-		super();
+
+	public Object clone(String name)throws CloneNotSupportedException  {  
 		this.name = name;
+		return (Sheep)super.clone();
 	}
+
 
 	@Override
 	public String getCountString() {
-		return name;
+		return getCount() + " " + getName();
 	}
-	
-	
 }

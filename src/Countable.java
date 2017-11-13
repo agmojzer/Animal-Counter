@@ -1,9 +1,9 @@
 
 public interface Countable {
 
-void incrementCount() ;
-void resetCount() ;
-int getCount();
-String getCountString();
+	void incrementCount() ;
+	void resetCount() ;
+	int getCount();
+	String getCountString();
 
 }

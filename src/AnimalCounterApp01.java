@@ -4,7 +4,7 @@ public class AnimalCounterApp {
 	public static void main(String[] args) throws CloneNotSupportedException {
 		int i;
 		String sRet;
-		// Creating a new instance of the Alligator and Sheep classes
+		// Create a new instance of the Alligator and Sheep classes
 		Alligator cAlligator = new Alligator();
 		Sheep cBlackie = new Sheep();
 		Sheep cDollie = (Sheep) cBlackie.clone("Dollie");
